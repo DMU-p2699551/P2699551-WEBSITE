@@ -1,0 +1,97 @@
+body {
+    margin: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(44, 141, 141);
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.subhead {
+    color: antiquewhite;
+    height: 90vh;
+
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 3.3rem;
+}
+.more-info {
+    img {
+        width: 100%;
+        object-fit: cover;
+        height:60em ;
+
+    }
+    .subhead2 {
+        font-weight: bold;
+        font-size: 1.25rem;
+
+    }
+
+.desc {
+    line-height: 1.25rem;
+    
+}
+}
+@media only screen and (min-width: 680px) {
+
+    body {
+        margin: 1.5em 5em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+}
+@media only screen and (min-width: 920px) {
+
+    .subhead {
+        height: auto;
+        width: 60%;
+        margin-bottom: 8em;
+    }
+    .feature {
+        display: grid;
+        grid-template-columns:repeat(2 , auto) ;
+        gap: 3em;
+        margin-bottom: 8em;
+        img {
+            width: 25em;
+        }
+        .content {
+            text-align: right;
+            width: 25em;
+        }
+    }
+    .feature.left {
+        grid-template-areas: 
+        "left right";
+        img {
+            grid-area: left;
+        }
+        .content {
+            text-align: left;
+            width: 25em;
+            justify-self: left;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.feature{ 
+gap: 0;
+}
+
+
+}
+/* this was to change the image size with the types of screen (mobile etc) and that the picture stays at a fixed size when the screen reaches a certain size 
+(in this case 1200 px) */ 
